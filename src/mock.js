@@ -15,7 +15,7 @@ const login = function(params) {
 	let userinfo = {
 		username: 'superadmin',
 		password: '123456',
-		role: '0' // 超级管理员
+		role: ['user'] // 超级管理员
 	}
 	return {
 		status: status,
@@ -23,10 +23,4 @@ const login = function(params) {
 	}
 }
 
-// 获取角色信息
-// cosnt getUserData = params => {
-
-// }
-
-// Mock.mock( url, post/get , 返回的数据)；
 Mock.mock('/mk_login', 'post', login) // 登录

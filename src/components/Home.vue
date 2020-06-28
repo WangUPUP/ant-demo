@@ -14,6 +14,7 @@
 					v-for="subItem in item.children"
 					:key="subItem.path"
 					style="padding:0px; margin:0px 0px 10px "
+					v-if="subItem.meta.authority"
 				>
 					{{ subItem.title }}
 				</a-menu-item>
