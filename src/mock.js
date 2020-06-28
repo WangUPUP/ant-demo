@@ -15,7 +15,7 @@ const login = function(params) {
 	let userinfo = {
 		username: 'superadmin',
 		password: '123456',
-		role: ['user'] // 超级管理员
+		role: ['admin']
 	}
 	return {
 		status: status,
